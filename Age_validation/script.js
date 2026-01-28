@@ -44,4 +44,28 @@
             showElement.innerHTML = message;
         }
         
+        function Reset() {
+            document.getElementById("txt-input").value = "18";
+            document.getElementById("show-text").innerHTML = "در حال انتظار برای ورود سن...";
+            
+            const resultBox = document.getElementById("result-box");
+            resultBox.classList.remove("success", "error", "warning");
+            
+            document.getElementById("txt-input").focus();
+        }
         
+         document.getElementById("txt-input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                Check();
+            }
+        });
+        
+         document.getElementById("txt-input").addEventListener("input", function() {
+            if (this.value.length > 3) {
+                this.value = this.value.slice(0, 3);
+            }
+        });
+        
+         window.onload = function() {
+            document.getElementById("txt-input").focus();
+        };
