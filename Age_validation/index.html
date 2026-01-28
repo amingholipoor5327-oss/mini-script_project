@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بررسی سن ورود</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔞 بررسی سن ورود</h1>
+            <p>سن خود را وارد کنید تا اجازه دسترسی بررسی شود</p>
+        </div>
+        
+        <div class="input-group">
+            <label for="txt-input">📝 سن شما:</label>
+            <input type="number" 
+                   id="txt-input" 
+                   class="text-input"
+                   placeholder="مثال: 20"
+                   min="1" 
+                   max="120"
+                   value="18">
+        </div>
+        
+        <div class="btn-group">
+            <button class="btn btn-check" onclick="Check()">
+                <span>✅</span>
+                بررسی سن
+            </button>
+            <button class="btn btn-reset" onclick="Reset()">
+                <span>🔄</span>
+                بازنشانی
+            </button>
+        </div>
+        
+        <div class="result-box" id="result-box">
+            <h1 id="show-text">در حال انتظار برای ورود سن...</h1>
+            <div class="age-status">
+                <div class="status-item">
+                    <span>👶</span>
+                    زیر 18 سال
+                </div>
+                <div class="status-item">
+                    <span>👨‍🎓</span>
+                    18 سال به بالا
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 - سیستم بررسی سن ورود | حداقل سن مجاز: 18 سال</p>
+        </div>
+    </div>
+    
+    <script src="./script.js">
+       
+    </script>
+</body>
+</html>
