@@ -108,6 +108,22 @@ button:hover {
     margin-top: 7px;
 }
 
+
+.msg {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.msg-error {
+    border: 2px solid red;
+}
+
+.msg-success {
+    border: 2px solid green;
+}
+
+
  @media (max-width: 992px) {
     .img-dv img {
         width: 500px;

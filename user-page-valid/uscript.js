@@ -1,8 +1,8 @@
 let user = document.querySelector("#name");
 let pass = document.querySelector("#pass");
 let passconfig = document.querySelector("#pssconfig");
-let message = document.querySelector(".msg");
-let myform = document.querySelector(".section");
+let message = document.querySelector("#msg");
+let myform = document.querySelector("#section");
 
 myform.addEventListener("submit", (e) => {
     e.preventDefault();
