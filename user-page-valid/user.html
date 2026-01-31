@@ -1,39 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="./userstyle.css">
-    <title>login page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./userstyle.css" />
+
+    <title>Login Page</title>
 </head>
+
 <body>
-    <form class="section">
-        <h1>Add new User🗝️</h1>
-        <div class="msg"></div>
-        
-        <div class="dv-firstelemnt">
-            <label for="name">UserName:</label>
-            <br>
-            <input type="text" id="name">
-        </div>
+    <div class="container">
+        <div class="form-dv">
 
-         <div class="dv-secondelemnt">
-            <label for="pass">Password🔒:</label>
-            <br>
-            <input type="password" id="pass">
-        </div>
+             <form class="section" autocomplete="off">
+                <h1>➕ افزودن کاربر جدید</h1>
 
-         <div class="dv-threeelemnt">
-            <label for="pssconfig">Password Confirmation🔒:</label>
-            <br>
-            <input type="password" id="pssconfig">
+                <div class="msg"></div>
+
+                <div class="dv-firstelemnt">
+                    <label for="name">نام کاربری</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        placeholder="username..."
+                        required
+                    >
+                </div>
+
+                <div class="dv-secondelemnt">
+                    <label for="pass">رمز عبور 🔒</label>
+                    <input 
+                        type="password" 
+                        id="pass" 
+                        placeholder="••••••••"
+                        required
+                    >
+                </div>
+
+                <div class="dv-threeelemnt">
+                    <label for="pssconfig">تکرار رمز عبور 🔒</label>
+                    <input 
+                        type="password" 
+                        id="pssconfig" 
+                        placeholder="repeat password..."
+                        required
+                    >
+                </div>
+
+                <div class="dv-btn">
+                    <button type="submit">ثبت</button>
+                </div>
+            </form>
+
+
+             <div class="img-dv">
+                <img src="./images/log.jpg" alt="login image">
+            </div>
+
         </div>
-        
-        <div class="dv-btn">
-            <button>check</button>
-        </div>
-    </form>
-  
- <script src="./uscript.js"></script>
+    </div>
+
+    <script src="./uscript.js"></script>
 </body>
 </html>

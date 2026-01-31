@@ -1,66 +1,110 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+ body {
     font-family: 'Vazir', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #10135e 0%, #0442a0 100%, #00286e);
+    background: linear-gradient(135deg, #10135e, #0442a0, #00286e);
+    min-height: 100vh;
+
     display: flex;
-    align-items: center; 
     justify-content: center;
-    min-height: 100vh;  
-    width: 100vw;
-    margin: 0;
+    align-items: center;
+
     padding: 20px;
 }
-h1{
-   font-weight: bold;
-   text-align: center;
-   margin-top: -40px;
-   margin-bottom: 40px;
 
-}
-.section {
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    padding: 40px;
+ .container {
     width: 100%;
-    max-width: 500px;  
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .form-dv {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+ .section {
+    background: #fff;
+    padding: 40px;
+    width: 360px;
+
+    border-radius:  0px 20px  20px   0px ;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+}
+
+ h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ .dv-firstelemnt,
+.dv-secondelemnt,
+.dv-threeelemnt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+ input {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+input:focus {
+    outline: blue;
+    border-color: #0442a0;
+    box-shadow: 0 0 5px rgba(4, 66, 160, 0.4);
+    transform: translateY(-5px);
  }
-.dv-firstelemnt , .dv-secondelemnt , .dv-threeelemnt {
-   margin-left: 10px;
-   margin-bottom: 10px;
-   font-size: 20px;
-   font-weight: bold;
-}
-.dv-firstelemnt  input, .dv-secondelemnt input , .dv-threeelemnt input{
-margin-left: 100px; 
-border: 1px solid black;
-border-radius: 3px;
-width: 200px;
-height: 30px;
-margin-top: 10px;
+ 
 
+ .dv-btn {
+    display: flex;
+    justify-content: center;
 }
 
-.dv-btn{
-   display: flex;
-   justify-content: center;
-   flex-direction: row;
+button {
+    margin-top: 15px;
+    width: 160px;
+    height: 42px;
 
+    border: none;
+    border-radius: 25px;
+
+    background: #111;
+    color: white;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: 0.25s;
 }
-.dv-btn button{
-   text-align: center;
-   margin-top: 20px;
-   background-color: black;
-   color: white;
-   width: 150px;
-   border-radius: 20px;
-   height: 40px;
-   font-size: 20px;
-   
- }
+
+button:hover {
+    background: #0442a0;
+    transform: scale(1.05);
+    transform: translateY(-5px);
+}
+
+ .img-dv img {
+    width: 750px;
+    max-width: 100%;
+   border-radius:  20px  0px  0px 20px ;
+    height: 528px;
+    margin-top: 7px;
+}
+
