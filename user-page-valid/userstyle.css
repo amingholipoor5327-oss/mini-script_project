@@ -45,6 +45,12 @@
  h1 {
     text-align: center;
     margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 1s;
+}
+h1:hover{
+    transform: translateY(-5px);
+    color: rgb(183, 174, 0);
 }
 
  .dv-firstelemnt,
@@ -113,14 +119,17 @@ button:hover {
     text-align: center;
     margin-bottom: 15px;
     font-weight: bold;
-}
+ }
+ 
 
 .msg-error {
-    border: 2px solid red;
+    border: 2px solid red; 
+    color: red;
 }
 
 .msg-success {
     border: 2px solid green;
+    color: green;
 }
 
 
@@ -172,3 +181,4 @@ button:hover {
         font-size: 14px;
     }
 }
+
